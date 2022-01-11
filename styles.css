@@ -121,7 +121,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 60vh;
+        height: 70vh; /* mobile menu height */
         font-size: 1.6rem;
         
     }
@@ -142,7 +142,7 @@
     }
     .navbar__links{
         text-align: center;
-        padding: 2rem;
+        padding: 1rem; /*change 2 to 1 rem*/
         width: 100%;
         display: table;
     }
@@ -175,4 +175,88 @@
     }
 
 }
+
+/* Hero section*/
+.hero{
+    background: black;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+    padding: 200px 0 ;
+}
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+.hero__heading{
+    font-size: 6rem;
+    margin-bottom: 24px;
+    color: white;
+}
+.hero__heading span{
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+}
+
+.hero__description{
+    font-size: 50px;
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent
+
+}
+.highlight{
+    border-bottom: 4px solid rgb(132,0,255);
+}
+@media screen and (max-width: 760px){
+    .hero__heading{
+        font-size: 60px;
+    }
+    .hero__description{
+        font-size: 40px;
+    }
+}
+.main__btn{
+    font-size: 1.8rem;
+    background: #7b4397;  
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397); 
+    background: linear-gradient(to right, #dc2430, #7b4397); 
+    padding: 20px 60px;  
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+
+}
+.main__btn a{
+    position: relative;
+    color: white;
+    z-index: 2;
+    text-decoration: none;
+}
+
+
 
